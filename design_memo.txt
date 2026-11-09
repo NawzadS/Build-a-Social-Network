@@ -1,0 +1,7 @@
+For this assignment, I decided to use a graph because I think it makes the most sense when representing something like a social network. Each person is represented as a node, and their friendships are represented as edges connecting them. Since friendships go both ways, using a graph allows both people to be connected without having to treat one as being above or below the other.
+
+I don't think a regular list or tree would work as well for this type of system. A list could store all the people, but it would be more difficult to manage the connections between them. A tree also wouldn't be ideal because it follows a hierarchical structure, while friendships don't really work that way. People can have multiple friends who are also connected to each other, which is something a graph handles much better.
+
+For my implementation, I used a dictionary to store each person and a list to store their friends. One advantage I noticed is that finding a person using the dictionary is generally fast, so adding friendships is pretty straightforward. However, checking whether two people are already friends requires searching through their friends lists, which can take longer as those lists grow. Printing the network also takes more time as more people and friendships are added because it has to go through every person and their connections.
+
+Overall, I think using an adjacency list is a good choice because it keeps the implementation simple while still handling the relationships efficiently.
